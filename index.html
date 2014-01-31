@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="js/vendor/jquery-1.8.3.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <title>GTD</title>
+</head>
+<body>
+     <div class="row">
+         <div class="col-md-2">
+             <h2>Help</h2>
+             <ul>
+                 <li><p>Select type that you need and them drag and drop issue to column that you need.</p></li>
+                 <li><p>Double click to issue to activate/deactivate editable mode.</p></li>
+                 <li>
+                     <p>Click save button to save you results.</p>
+                 </li>
+                 <li>
+                     <p>Click on the "cross" to delete issue.</p>
+                 </li>
+                 <li>
+                     <p>Drag and drop issue to change status.</p>
+                 </li>
+                 <li>
+                     <p>Enjoy.</p>
+                 </li>
+             </ul>
+
+             <div id="add-new-task" class="issue jumbotron">
+                <span class="issue-id"></span>
+                <span class="issue-name">New issue</span>
+                 <select name="issue-type" id="issue-type">
+                     <option value="1" selected="selected">Task</option>
+                     <option value="2">Bug</option>
+                 </select>
+             </div>
+         </div>
+         <div id="issues-panel" class="col-md-6"></div>
+         <div class="col-md-2">
+         </div>
+     </div>
+</body>
+</html>

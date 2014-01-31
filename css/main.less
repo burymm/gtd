@@ -1,0 +1,51 @@
+@import (less) "bootstrap.css";
+
+body, h1, h2, h3 {
+  margin: 0;
+  padding:  0;
+}
+
+.issue {
+  cursor: pointer;
+
+  &.edit {
+    .issue-edit {
+      display: inline-block;
+    }
+
+    .issue-save {
+      display: inline-block;
+    }
+  }
+
+  &.task {
+    background-color: #46b8da;
+  }
+
+  &.bug {
+    background-color: #e4b9c0;
+  }
+
+  .issue-id {
+    &:before {
+      content: '#';
+    }
+  }
+
+  .issue-edit {
+    display: none;
+    margin-right: 15px;
+    width: 60%;
+    font-size: 12px;
+
+  }
+
+  .issue-save {
+    display: none;
+  }
+}
+
+.progress-col {
+  min-height: 800px;
+  border: 1px solid #000000;
+}
