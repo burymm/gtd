@@ -43,10 +43,28 @@
          </div>
      </div>
 
+
+
+     <!-- templates -->
+     <script id="statusColumns" type="text/x-jsrender">
+        <div id="{{:htmlId}}" class="col-md-4 progress-col"><h2>{{:name}}</h2></div>
+    </script>
+
+     <script id="taskTmlp" type="text/x-jsrender">
+        <div class="issue jumbotron {{:issueTypeClassName}}">
+            <div class="close">X</div>
+            <span class="issue-id">{{:task.id}}</span>
+            <span class="issue-name">{{:task.name}}</span>
+            <input class="issue-edit" type="text" placeholder="{{:task.name}}" value="{{:task.name}}" />
+            <button class="issue-save btn btn-primary">Save</button>
+         </div>
+     </script>
+
+     <!-- script -->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
      <script src="http://underscorejs.org/underscore-min.js"></script>
-     <script src="js/data.js"></script>
+     <script src="js/vendor/jsrender.js"></script>
      <script src="js/main.js"></script>
 </body>
 </html>

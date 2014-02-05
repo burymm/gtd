@@ -1,0 +1,47 @@
+{"taskList": [
+    {
+        "id": 1,
+        "name": "first task",
+        "type": 1,
+        "status": 1
+    },
+    {
+        "id": 2,
+        "name": "second type",
+        "type": 1,
+        "status": 1
+    },
+    {
+        "id": 3,
+        "name": "first bug",
+        "type": 2,
+        "status": 1
+    },
+    {
+       "id": 4,
+       "name": "second bug",
+       "type": 2,
+       "status": 1
+    },
+    {
+        "id": 5,
+        "name": "third task",
+        "type": 1,
+        "status": 1
+    }
+],
+    "columns": [
+        {"id": 1, "htmlId": "not-started", "name": "Not started"},
+        {"id": 2, "htmlId": "in-progress", "name": "In progress"},
+        {"id": 3, "htmlId": "finished", "name": "Done"}
+    ],
+    "taskStatus": {
+        "NOT_STARTED": 1,
+        "IN_PROGRESS": 2,
+        "DONE": 3
+    },
+    "taskType": {
+        "TASK": 1,
+        "BUG": 2
+    }
+}
